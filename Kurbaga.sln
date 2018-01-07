@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kurbaga", "src\Kurbaga\Kurbaga.csproj", "{3AAD7FCE-68E0-4D6C-B4B8-9C3C99D6FF97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurbaga.Test", "test\Kurbaga.Test\Kurbaga.Test.csproj", "{4E12EB99-B8EE-49AC-B132-CAF780CEDC6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AAD7FCE-68E0-4D6C-B4B8-9C3C99D6FF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAD7FCE-68E0-4D6C-B4B8-9C3C99D6FF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAD7FCE-68E0-4D6C-B4B8-9C3C99D6FF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAD7FCE-68E0-4D6C-B4B8-9C3C99D6FF97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E12EB99-B8EE-49AC-B132-CAF780CEDC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E12EB99-B8EE-49AC-B132-CAF780CEDC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E12EB99-B8EE-49AC-B132-CAF780CEDC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E12EB99-B8EE-49AC-B132-CAF780CEDC6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D9FBA99-CAFB-4395-AF8A-A98B0BCFA53F}
+	EndGlobalSection
+EndGlobal
