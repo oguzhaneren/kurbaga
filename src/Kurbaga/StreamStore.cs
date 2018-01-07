@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Kurbaga
 {
@@ -9,14 +10,17 @@ namespace Kurbaga
 
     }
 
-    public class StreamStore
+    public abstract class StreamStoreBase
     {
-        public IStreamSession OpenSession()
+        public abstract Task<IStreamSession> OpenSession();
+
+        protected virtual void Initialize()
         {
-            return null;
+            // some init
+
         }
 
-
+        protected abstract void InitializeCore();
     }
 
 
@@ -37,11 +41,12 @@ namespace Kurbaga
 
     public interface IAdvancedStreamOperations
     {
-        void DeleteStream(StreamId id);
+        Task DeleteStream(StreamId id);
     }
 
     public interface IStreamSession
     {
+        IAdvancedStreamOperations Advanced { get; }
         void AppendToStream(StreamId id, object[] data);
         void SaveChanges();
         void Cancel();
